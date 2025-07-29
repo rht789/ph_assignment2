@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ------------------- Fonts ------------------- */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* ------------------- Global Styles ------------------- */
+body{
+    margin: 0;
+}
+
+main, header{
+    padding: 30px 150px;
+}
+
+/* ------------------- shared styles ------------------- */
+
+.gray-1{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.gray-2{
+    color: rgba(137, 135, 161, 1);
+}
+
+
+
+/* ------------------- Header Styles -------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 135px;
+    height: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.home{
+    font-weight: 800;
+}
+
+/* ------------------- Responsiveness ------------------- */
+
+@media(max-width: 576px){
+    main, header{
+        padding: 16px 13px;
+    }
+    nav img{
+        width:25%;
+    }
+    .hidden{
+        display: none;
+    }
+
+}
