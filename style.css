@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* ------------------- Fonts ------------------- */
 .inter-font {
@@ -7,7 +7,6 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
 
 .noto-serif-font {
   font-family: "Noto Serif", serif;
@@ -17,106 +16,193 @@
 }
 
 /* ------------------- Global Styles ------------------- */
-body{
-    margin: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-main, header{
-    padding: 30px 150px;
+main,
+header {
+  padding: 30px 150px;
 }
 
 /* ------------------- shared styles ------------------- */
 
-.gray-1{
-    color: rgba(0, 0, 0, 0.5);
+.gray-1 {
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.gray-2{
-    color: rgba(137, 135, 161, 1);
+.gray-2 {
+  color: rgba(137, 135, 161, 1);
 }
 
-.primary-color{
-    color: #E95A08;
+.primary-color {
+  color: #e95a08;
 }
 
-
-
-/* ------------------- Header Styles -------------------*/
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.btn {
+  background-color: #e95a08;
+  color: white;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  width: 100%;
 }
 
-nav img{
-    width: 135px;
-    height: 100%;
+/* ---------------------- Header Styles ---------------------- */
+/* ------------------- Nav Styles -------------------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 48px;
+nav img {
+  width: 135px;
+  height: 100%;
 }
 
-nav ul a{
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 48px;
 }
 
-.home{
-    font-weight: 800;
+nav ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.home {
+  font-weight: 700;
 }
 
 /* ------------------- Banner ------------------- */
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin-top: 120px;
-
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 120px;
 }
 
-.banner img{
-    width: 100%;
-    height: 100%;
+.banner img {
+  width: 100%;
+  height: 100%;
 }
 
-.banner-title{
-    font-size: 4.0625rem;
-    font-weight: 800;
+.banner-title {
+  font-size: 4.0625rem;
+  font-weight: 800;
+  margin: 0;
 }
 
-.banner-description{
-    font-size: 1.375rem;
-    font-weight: 400;
+.banner-description {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
+/* -------------------------- Main Styles -------------------------- */
+/* ------------------- Plants Section Styles ------------------- */
+.plants {
+  text-align: center;
+}
+
+.plants-title {
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.plants-description {
+  font-size: 1.375rem;
+  margin: 16px auto 50px;
+  width: 75%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.flower-name {
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 /* ------------------- Responsiveness ------------------- */
 
-@media(max-width: 576px){
-    main, header{
-        padding: 16px 13px;
-    }
-    nav img{
-        width:25%;
-    }
-    .hidden{
-        display: none;
-    }
+@media (max-width: 576px) {
+  main,
+  header {
+    padding: 16px 13px;
+  }
+  nav img {
+    width: 25%;
+  }
+  .hidden {
+    display: none;
+  }
+  /* banner  */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 45px;
+  }
 
-    .banner{
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 28px;
-    }
+  .banner-title {
+    width: 55%;
+    font-size: 1.5rem;
+    margin-bottom: 13px;
+  }
 
-    .banner-title{
-        font-size: 1.5rem;
-    }
-
-    .banner-description{
-        font-size: 0.875rem;
-    }
+  .banner-description {
+    font-size: 0.875rem;
+  }
+  /* plants  */
+  .plants-title {
+    font-size: 1.5rem;
+  }
+  .plants-description {
+    font-size: 0.875rem;
+    width: 100%;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .flower-name, .price{
+    font-size: 1rem;
+  }
+  .btn{
+    font-size: 0.875rem;
+    padding: 15px;
+  }
 }
