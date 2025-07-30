@@ -91,7 +91,7 @@ nav ul a {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin-top: 120px;
+  margin: 120px 0;
 }
 
 .banner img {
@@ -154,7 +154,28 @@ nav ul a {
   font-weight: 700;
   margin-bottom: 30px;
 }
+/* ------------------- Plants Lovers Section Styles ------------------- */
+.plants-lover{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 120px 0;
+  gap: 60px;
+}
 
+.pl-title{
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+.pl-detail-list{
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
+.pl-list{
+  padding-left: 20px;
+}
 /* ------------------- Responsiveness ------------------- */
 
 @media (max-width: 576px) {
@@ -173,7 +194,7 @@ nav ul a {
     flex-direction: column-reverse;
     align-items: center;
     gap: 28px;
-    margin-bottom: 45px;
+    margin-bottom: 65px;
   }
 
   .banner-title {
@@ -204,5 +225,32 @@ nav ul a {
   .btn{
     font-size: 0.875rem;
     padding: 15px;
+  }
+
+  /* plants lover */
+  .plants-lover {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .pl-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pl-title{
+    font-size: 1.5rem;
+  }
+
+  .pl-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pl-list{
+    font-size: 0.875rem;
   }
 }
